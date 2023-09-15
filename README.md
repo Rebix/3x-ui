@@ -2,10 +2,10 @@
 
 > **Disclaimer: This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment**
 
-[![](https://img.shields.io/github/v/release/mhsanaei/3x-ui.svg)](https://github.com/MHSanaei/3x-ui/releases)
-[![](https://img.shields.io/github/actions/workflow/status/mhsanaei/3x-ui/release.yml.svg)](#)
-[![GO Version](https://img.shields.io/github/go-mod/go-version/mhsanaei/3x-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/mhsanaei/3x-ui/total.svg)](#)
+[![](https://img.shields.io/github/v/release/Rebix/3x-ui.svg)](https://github.com/Rebix/3x-ui/releases)
+[![](https://img.shields.io/github/actions/workflow/status/Rebix/3x-ui/release.yml.svg)](#)
+[![GO Version](https://img.shields.io/github/go-mod/go-version/Rebix/3x-ui.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/Rebix/3x-ui/total.svg)](#)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 3x-ui panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese,Russian,Vietnamese)**
@@ -18,7 +18,7 @@
 # Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Rebix/3x-ui/master/install.sh)
 ```
 
 # Install custom version
@@ -26,7 +26,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 To install your desired version you can add the version to the end of install command. Example for ver `v1.7.8`:
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) v1.7.8
+bash <(curl -Ls https://raw.githubusercontent.com/Rebix/3x-ui/master/install.sh) v1.7.8
 ```
 
 # SSL
@@ -66,7 +66,7 @@ You also can use `x-ui` menu then select `SSL Certificate Management`
 ```sh
 ARCH=$(uname -m)
 [[ "${ARCH}" == "aarch64" || "${ARCH}" == "arm64" ]] && XUI_ARCH="arm64" || XUI_ARCH="amd64"
-wget https://github.com/MHSanaei/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
+wget https://github.com/Rebix/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
 ```
 
 2. Once the compressed package is downloaded, execute the following commands to install or upgrade x-ui:
@@ -102,7 +102,7 @@ systemctl restart x-ui
 2. Clone the Project Repository:
 
    ```sh
-   git clone https://github.com/MHSanaei/3x-ui.git
+   git clone https://github.com/Rebix/3x-ui.git
    cd 3x-ui
    ```
 
@@ -122,7 +122,7 @@ systemctl restart x-ui
       --network=host \
       --restart=unless-stopped \
       --name 3x-ui \
-      ghcr.io/mhsanaei/3x-ui:latest
+      ghcr.io/Rebix/3x-ui:latest
    ```
 
 </details>
@@ -257,23 +257,21 @@ Reference syntax:
 # Setting up Telegram bot
 
 - Start [Botfather](https://t.me/BotFather) in your Telegram account:
-    ![Botfather](./media/botfather.png)
-  
+  ![Botfather](./media/botfather.png)
 - Create a new Bot using /newbot command: It will ask you 2 questions, A name and a username for your bot. Note that the username has to end with the word "bot".
-    ![Create new bot](./media/newbot.png)
+  ![Create new bot](./media/newbot.png)
 
 - Start the bot you've just created. You can find the link to your bot here.
-    ![token](./media/token.png)
+  ![token](./media/token.png)
 
 - Enter your panel and config Telegram bot settings like below:
-![Panel Config](./media/panel-bot-config.png)
+  ![Panel Config](./media/panel-bot-config.png)
 
 Enter your bot token in input field number 3.
 Enter the user ID in input field number 4. The Telegram accounts with this id will be the bot admin. (You can enter more than one, Just separate them with ,)
 
 - How to get Telegram user ID? Use this [bot](https://t.me/useridinfobot), Start the bot and it will give you the Telegram user ID.
-![User ID](./media/user-id.png)
-
+  ![User ID](./media/user-id.png)
 
 # API routes
 
@@ -360,4 +358,4 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/MHSanaei/3x-ui.svg)](https://starchart.cc/MHSanaei/3x-ui)
+[![Stargazers over time](https://starchart.cc/Rebix/3x-ui.svg)](https://starchart.cc/Rebix/3x-ui)
