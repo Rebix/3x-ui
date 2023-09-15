@@ -790,17 +790,17 @@ func (s *SubService) genRemark(inbound *model.Inbound, email string, extra strin
 		// Get remained days
 		if statsExist {
 			if !stats.Enable {
-				return fmt.Sprintf("⛔️N/A-%s", strings.Join(remark, "-"))
+				return fmt.Sprintf("⛔️غیرفعال-%s", strings.Join(remark, "-"))
 			}
 			if vol := stats.Total - (stats.Up + stats.Down); vol > 0 {
-				remark = append(remark, fmt.Sprintf("%s%s", common.FormatTraffic(vol), "📊"))
+				remark = append(remark, fmt.Sprintf("%s%s", common.FormatTraffic(vol), ""))
 			}
 			now := time.Now().Unix()
 			switch exp := stats.ExpiryTime / 1000; {
 			case exp > 0:
-				remark = append(remark, fmt.Sprintf("%d%s⏳", (exp-now)/86400, "Days"))
+				remark = append(remark, fmt.Sprintf("%d%s", (exp-now)/86400, "روز"))
 			case exp < 0:
-				remark = append(remark, fmt.Sprintf("%d%s⏳", exp/-86400, "Days"))
+				remark = append(remark, fmt.Sprintf("%d%s", exp/-86400, "روز"))
 			}
 		}
 	}
